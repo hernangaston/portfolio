@@ -24,9 +24,9 @@ Bienvenido a mi portafolio web. Este proyecto está diseñado para mostrar mis h
 Las contribuciones son bienvenidas. Si deseas contribuir, por favor, realiza un fork del repositorio y crea una pull request con tus sugerencias.
 
 📝 Licencia
-##Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+### Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
 
 📫 Contacto
-##LinkedIn: www.linkedin.com/in/hernan-gaston
-##GitHub: @hernangaston
-##Correo: hernangaston@gmail.com
+### LinkedIn: www.linkedin.com/in/hernan-gaston
+### GitHub: @hernangaston
+### Correo: hernangaston@gmail.com
