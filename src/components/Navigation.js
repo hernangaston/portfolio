@@ -31,32 +31,32 @@ export default function Navigation() {
         <ul className="navbar-nav">
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#about">
-              About
+              Acerca de
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#experience">
-              Experience
+              Experiencia
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#education">
-              Education
+              Educación
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#skills">
-              Skills
+              Habilidades
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#interests">
-              Interests
+              Intereses
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#awards">
-              Awards
+              Certificaciones
             </a>
           </li>
         </ul>

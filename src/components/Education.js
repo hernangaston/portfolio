@@ -3,32 +3,17 @@ export default function Education() {
       <div>
         <section className="resume-section" id="education">
           <div className="resume-section-content">
-            <h2 className="mb-5">Education</h2>
+            <h2 className="mb-5">Educación</h2>
             <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
               <div className="flex-grow-1">
-                <h3 className="mb-0">National Tecnology University</h3>
-                <div className="subheading mb-3">University technician in programming</div>
+                <h3 className="mb-0">Universidad tecnologica nacional.</h3>
+                <div className="subheading mb-3">Técnico universitario en programación.</div>
                 <div>
-                  Full-stack web developer.
+                  Desarrollado web fullstack.
                 </div>
-                <p>Percentage: Above 80% in all semesters</p>
               </div>
               <div className="flex-shrink-0">
-                <span className="text-primary">April 2023 - Present</span>
-              </div>
-            </div>
-            <div className="d-flex flex-column flex-md-row justify-content-between">
-              <div className="flex-grow-1">
-                <h3 className="mb-0">
-                  High School - E.M.P.I. Nº 3004 "San José", Villa Cañás.
-                </h3>
-                <div className="subheading mb-3">
-                  Commercial expert
-                </div>
-                <p>Completed</p>
-              </div>
-              <div className="flex-shrink-0">
-                <span className="text-primary">1994 - 1999</span>
+                <span className="text-primary">Marzo 2023 - Actualidad</span>
               </div>
             </div>
           </div>

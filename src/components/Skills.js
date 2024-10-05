@@ -3,9 +3,9 @@ export default function Skills() {
       <div>
         <section className="resume-section" id="skills">
           <div className="resume-section-content">
-            <h2 className="mb-5">Skills</h2>
+            <h2 className="mb-5">Habilidades</h2>
             <div className="subheading mb-3">
-              Programming Languages &amp; Tools
+              Lenguajes y frameworks.
             </div>
             <ul className="list-inline dev-icons">
               <li className="list-inline-item">
@@ -14,9 +14,7 @@ export default function Skills() {
               <li className="list-inline-item">
                 <i className="fab fa-css3-alt" />
               </li>
-              <li className="list-inline-item">
-                <i className="fab fa-sass" />
-              </li>
+             
               <li className="list-inline-item">
                 <i className="fab fa-js-square" />
               </li>
@@ -37,7 +35,16 @@ export default function Skills() {
               </li>
               <li className="list-inline-item">
                 <i className="fab fa-java" />
-              </li>              
+              </li>     
+              <li className="list-inline-item">  
+              <i class="fa-brands fa-python"></i>
+              </li>
+              <li className="list-inline-item">  
+              <i class="fa-brands fa-git"></i>
+              </li>
+              <li className="list-inline-item">  
+              <i class="fa-brands fa-github"></i>
+              </li>
             </ul>
             <div className="subheading mb-3">Workflow</div>
             <ul className="fa-ul mb-0">
@@ -45,31 +52,31 @@ export default function Skills() {
                 <span className="fa-li">
                   <i className="fas fa-check" />
                 </span>
-               Front-End Programming Languages and Frameworks
+               Programación frontend
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check" />
                 </span>
-                Back-End Programming Languages and Frameworks
+                Programación backend
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check" />
                 </span>
-                A Big-Picture Understanding of Development
+                Una comprensión general del desarrollo
+                Amplio entendimiento del desarrollo web
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check" />
                 </span>
-                Ability to Adapt Quickly
+                Capacidad de rapida adaptacion
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check" />
-                </span>
-                Problem-Solving and Communication
+                </span>Resolución de problemas y comunicación
               </li>
             </ul>
           </div>

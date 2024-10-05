@@ -2,7 +2,7 @@ export default function Awards() {
     return (
       <section className="resume-section" id="awards">
         <div className="resume-section-content">
-          <h2 className="mb-5">Awards &amp; Certifications</h2>
+          <h2 className="mb-5">Certificaciones</h2>
         
 			<div class="row row-cols-1 row-cols-lg-3 g-3">
 				<div class="col">

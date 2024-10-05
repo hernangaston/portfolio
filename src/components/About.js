@@ -6,16 +6,13 @@ export default function About() {
             Hernan
             <span className="text-primary"> Gaston</span>
           </h1>
-          <div className="subheading mb-5">FULL-STACK Developer - Santa Fe, Argentina</div>
+          <div className="subheading mb-5">Desarrollador web - Santa Fe, Argentina</div>
           <p className="lead mb-5">
-            I am experienced in building websites and backend development. My previous experience 
-            of working in product based companies as well as emerging startups will surely 
-            help in product development for companies at various stages.
-          </p>
-          <p className="lead mb-5">
-            Tengo experiencia en la construcción de sitios web y desarrollo backend. Mi experiencia previa de trabajo en empresas basadas en productos,
-            así como startups emergentes seguramente ayudará en el desarrollo de productos para empresas en diversas etapas.
-          </p>
+          Soy un profesional con experiencia en desarrollo web fullstack, especializado en backend con Python y su framework Django, así como en Django Rest Framework para la creación de APIs REST robustas y seguras.</p> <p className="lead mb-5">
+          Tengo un dominio avanzado de lenguajes de frontend como JavaScript y TypeScript, y utilizo frameworks como Angular para desarrollar interfaces de usuario interactivas y responsivas.</p>
+          <p className="lead mb-5">Mi enfoque integral me permite integrar sin problemas tecnologías frontend y backend, garantizando aplicaciones completas y funcionales. Estoy familiarizado con el uso de Git para el control de versiones y la colaboración efectiva, así como con herramientas como Trello para la gestión ágil de proyectos.</p>
+          <p className="lead mb-5">Entre mis habilidades adicionales se encuentran el diseño e integración de APIs RESTful, el manejo de autenticación y autorización en aplicaciones, y la implementación de mejores prácticas de seguridad y optimización de código. Además, tengo experiencia en trabajo colaborativo bajo metodologías ágiles.</p>
+          <p className="lead mb-5">Me considero un profesional versátil, proactivo y adaptable, con la capacidad de enfrentar desafíos técnicos y entregar soluciones completas, alineadas con las necesidades del proyecto.</p>
           <div className="social-icons">
             <a
               className="social-icon"
