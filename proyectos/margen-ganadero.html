@@ -11,28 +11,29 @@
 <meta property="og:url" content="https://hernangaston.github.io/portfolio/proyectos/margen-ganadero.html">
 <meta property="og:image" content="https://hernangaston.github.io/portfolio/img/margen-ganadero.jpg">
 <meta name="theme-color" content="#202023">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23202023'/%3E%3Cpath d='M6 18c0-7 4-11.5 12-12.5-.8 8-5.5 12.5-12 12.5z' fill='%2388ccca'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23202023'/%3E%3Cpath d='M7 8l4 4-4 4M13 16h5' fill='none' stroke='%2388ccca' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <script>try{if(localStorage.getItem('tema')==='claro')document.documentElement.setAttribute('data-tema','claro')}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
 <header class="nav">
   <div class="nav-inner">
-    <a class="logo" href="../index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15z"/><path d="M5 19c3-4 6-7 10-10"/></svg><span>Hernán Gastón</span></a>
+    <a class="logo" href="../index.html"><span class="prompt">&gt;&gt;&gt;</span><span>hernan_gaston</span></a>
     <nav class="nav-links" aria-label="Principal">
-      <a href="../proyectos/index.html" aria-current="page">Proyectos</a>
-      <a href="https://github.com/hernangaston/portfolio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>Código</a>
+      <a href="../proyectos/index.html" aria-current="page">proyectos/</a>
+      <a href="https://github.com/hernangaston/portfolio">código</a>
     </nav>
     <button class="tema" type="button" aria-label="Cambiar a modo claro"><svg class="sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="luna" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg></button>
   </div>
 </header>
 <main id="contenido">
 <div class="contenedor">
-  <h1 class="migas"><a href="index.html">Proyectos</a><span class="sep">›</span>Margen Ganadero<span class="anio">2026</span></h1>
+  <p class="ruta-pagina"><a href="index.html">proyectos</a>/margen-ganadero</p>
+  <h1 class="migas">Margen Ganadero<span class="anio">2026</span></h1>
   <p class="parrafo">Antes de comprar terneros para engorde, un productor necesita saber cuánto puede pagar por kilo sin perder plata. Ese cálculo combina precios de compra y venta, comisiones, días a campo y en corral, aumento diario de peso, fletes y tipo de cambio, y se hacía en planillas que había que rehacer con cada cambio de precio. Margen Ganadero lo resuelve en una sola pantalla.</p>
   <ul class="ficha">
       <li><span class="etiqueta">Sitio</span><a href="https://margenganadero.com">margenganadero.com</a></li>
@@ -41,7 +42,7 @@
       <li><span class="etiqueta">Rol</span>Proyecto propio: diseño, desarrollo y publicación</li>
   </ul>
   <figure class="figura"><img src="../img/margen-ganadero.jpg" alt="Pantalla de Margen Ganadero con resultados, tipos de cambio, novedades del sector, curva de margen y variables" loading="lazy"></figure>
-  <h2 class="subtitulo">Qué hace</h2>
+  <h2 class="subtitulo"><span class="hash">#</span> Qué hace</h2>
     <ul class="lista">
       <li>Calcula el margen por cabeza y el margen total, con el desglose de costos.</li>
       <li>Dibuja la curva de margen según el precio de compra y marca el precio máximo rentable.</li>
@@ -49,7 +50,7 @@
       <li>Calcula el flete según la distancia y el tipo de camión.</li>
       <li>Compara hasta 3 escenarios y los exporta a PDF.</li>
     </ul>
-  <h2 class="subtitulo">Decisiones técnicas</h2>
+  <h2 class="subtitulo"><span class="hash">#</span> Decisiones técnicas</h2>
     <ul class="lista">
       <li>El mismo código sirve en Express (local) y en funciones serverless (producción): la lógica vive en un solo módulo.</li>
       <li>Caché en el servidor con deduplicación de pedidos y respaldo con el último dato válido si una fuente externa falla.</li>
@@ -59,7 +60,7 @@
     </ul>
 </div>
 </main>
-<footer class="pie">© 2026 Hernán Gastón. Sitio estático, publicado en GitHub Pages.</footer>
+<footer class="pie"># © 2026 Hernán Gastón · HTML y CSS generados con Python, publicado en GitHub Pages</footer>
 <script src="../js/tema.js"></script>
 
 </body>
