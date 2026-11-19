@@ -207,3 +207,11 @@ main { padding-top: 56px; }
   .escena { margin-bottom: -24px; }
   .parrafo { text-align: left; hyphens: manual; }
 }
+
+/* Capturas de mails (caso Vindu) */
+.figuras { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 12px 0 6px; align-items: start; }
+.figura-mail { margin: 0; }
+.figura-mail img { border-radius: 10px; background: #fff; box-shadow: 0 0 0 1px var(--card); }
+.figura-mail figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 6px; text-align: center; }
+.nota { font-size: 0.85rem; color: var(--muted); margin: 6px 0 0; }
+@media (max-width: 560px) { .figuras { grid-template-columns: 1fr; } }
