@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hernán Gastón — Desarrollador full-stack</title>
+<meta name="description" content="Desarrollador full-stack (Node.js, Python/Django, Angular). Proyectos: Margen Ganadero, sistema de gestión de mantenimiento y sitio para una psicóloga en Uruguay.">
+<meta property="og:title" content="Hernán Gastón — Desarrollador full-stack">
+<meta property="og:description" content="Node.js, Python/Django, Angular. Proyectos en producción y código abierto en GitHub.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hernangaston.github.io/portfolio/">
+<meta property="og:image" content="https://hernangaston.github.io/portfolio/img/margen-ganadero.jpg">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="#">Hernán Gastón</a>
+    <nav aria-label="Secciones">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="eyebrow">Desarrollador full-stack · Santa Fe, Argentina</p>
+      <h1>Construyo software que resuelve problemas de negocio concretos.</h1>
+      <p class="lead">Trabajo con Node.js, Python y Django en el backend, y con Angular y JavaScript en el frontend. Soy Técnico Universitario en Programación (UTN) y administro una empresa agrícola desde 2014: entiendo costos, márgenes y cómo opera un negocio.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:hernangaston@gmail.com">hernangaston@gmail.com</a>
+        <a class="btn" href="https://github.com/hernangaston">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/hernan-gaston/">LinkedIn</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/hernan.jpg" alt="Hernán Gastón" width="200" height="199">
+    </figure>
+  </section>
+
+  <section id="proyectos" class="wrap section">
+    <h2 class="section-title"><span>01</span> Proyectos</h2>
+
+    <article class="case">
+      <a class="case-media" href="https://margenganadero.com">
+        <img src="img/margen-ganadero.jpg" alt="Simulador Margen Ganadero: margen por cabeza, costos, tipos de cambio, curva de margen según precio de compra y variables con sliders" width="1374" height="868" loading="lazy">
+      </a>
+      <div class="case-body">
+        <p class="case-meta">2026 · Proyecto propio · En producción</p>
+        <h3>Margen Ganadero</h3>
+        <p class="case-problem">Saber si conviene comprar hacienda para engorde llevaba horas de planilla, y había que rehacer el cálculo cada vez que cambiaba un precio.</p>
+        <ul class="case-points">
+          <li>Simulador que calcula el margen por cabeza y total, y muestra el <strong>precio máximo rentable de compra</strong>.</li>
+          <li>Precarga precios reales: índices ganaderos de Rosgan y dólar oficial, blue y MEP.</li>
+          <li>API en funciones serverless con caché, deduplicación de pedidos y respaldo ante fallas de las fuentes externas.</li>
+          <li>Compara hasta 3 escenarios y los exporta a PDF. 26 tests sobre el cálculo de márgenes y fletes.</li>
+        </ul>
+        <ul class="stack" aria-label="Tecnologías">
+          <li>JavaScript</li><li>Node.js</li><li>Vercel serverless</li><li>Express</li><li>Chart.js</li><li>CSP / HSTS</li>
+        </ul>
+        <p class="case-links">
+          <a href="https://margenganadero.com">Ver el sitio ↗</a>
+          <a href="https://github.com/hernangaston/calculadora-ganadera">Código ↗</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="case case-alt">
+      <div class="case-media case-code" aria-hidden="true">
+<pre><code><span class="c">// Toda la API exige token</span>
+app.use(<span class="s">"/api"</span>, verifyToken);
+
+<span class="k">GET</span>    /api/orden
+<span class="k">POST</span>   /api/orden
+<span class="k">PATCH</span>  /api/orden/:id
+<span class="k">GET</span>    /api/activo
+<span class="k">GET</span>    /api/ubicacion
+<span class="k">GET</span>    /api/operario
+<span class="c">  … 13 recursos en Swagger</span></code></pre>
+      </div>
+      <div class="case-body">
+        <p class="case-meta">2024 · Proyecto final UTN · En equipo</p>
+        <h3>Sistema de gestión de mantenimiento</h3>
+        <p class="case-problem">El área de mantenimiento de un edificio necesita saber qué activos hay, dónde está cada uno, qué tareas requieren y qué operario las hace.</p>
+        <ul class="case-points">
+          <li>Desarrollé el backend y el frontend.</li>
+          <li>API REST con Express y MySQL para activos, edificios, ubicaciones, tareas, operarios y órdenes de trabajo.</li>
+          <li>Login con bcrypt y JWT; un interceptor de Angular envía el token y cierra la sesión cuando vence.</li>
+          <li>Frontend en Angular 18 con acceso por rol; base de datos en Docker Compose.</li>
+        </ul>
+        <ul class="stack" aria-label="Tecnologías">
+          <li>Node.js</li><li>Express</li><li>MySQL</li><li>JWT</li><li>Angular 18</li><li>Swagger</li><li>Docker</li>
+        </ul>
+        <p class="case-links">
+          <a href="https://github.com/hernangaston/mantenimiento">Backend ↗</a>
+          <a href="https://github.com/hernangaston/mantenimiento_front">Frontend ↗</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="case">
+      <a class="case-media" href="https://www.verozuka.com">
+        <img src="img/verozuka.jpg" alt="Página de inicio de verozuka.com, sitio de una psicóloga en Montevideo" width="1374" height="868" loading="lazy">
+      </a>
+      <div class="case-body">
+        <p class="case-meta">2026 · Cliente freelance · En producción</p>
+        <h3>Sitio para una psicóloga en Uruguay</h3>
+        <p class="case-problem">Una psicóloga de Montevideo necesitaba un sitio para presentar sus servicios y recibir pedidos de consulta, también de uruguayos que viven en el exterior.</p>
+        <ul class="case-points">
+          <li>Sitio de 8 páginas en HTML, CSS y JavaScript, sin dependencias.</li>
+          <li>Formulario de consulta en PHP que envía al correo del dominio, con consentimiento de uso de datos.</li>
+          <li>Dominio, correo, redirecciones a HTTPS y publicación por FTPS en hosting compartido.</li>
+          <li>SEO técnico: sitemap, datos estructurados JSON-LD y noindex en las páginas sin contenido.</li>
+        </ul>
+        <ul class="stack" aria-label="Tecnologías">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>.htaccess</li><li>JSON-LD</li>
+        </ul>
+        <p class="case-links">
+          <a href="https://www.verozuka.com">Ver el sitio ↗</a>
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section id="experiencia" class="wrap section">
+    <h2 class="section-title"><span>02</span> Experiencia</h2>
+    <ol class="timeline">
+      <li>
+        <p class="when">2026</p>
+        <div>
+          <h3>Desarrollador web freelance</h3>
+          <p>Sitios y herramientas web para clientes, del diseño a la publicación.</p>
+        </div>
+      </li>
+      <li>
+        <p class="when">ago – sep 2026</p>
+        <div>
+          <h3>Developer · ID for Ideas <span class="tag">mentoría</span></h3>
+          <p>Programa intensivo con un caso simulado de agencia de marketing. APIs REST en Java 17 con Spring Boot y en Node.js con Express, e integración con React.</p>
+        </div>
+      </li>
+      <li>
+        <p class="when">2018 – 2020</p>
+        <div>
+          <h3>Programador web · Vindu</h3>
+          <p>Desarrollo, mantenimiento y corrección de funcionalidades en Python, Django y Django REST Framework; front-end con JavaScript y Bootstrap; integraciones y landing pages.</p>
+        </div>
+      </li>
+      <li>
+        <p class="when">2014 – hoy</p>
+        <div>
+          <h3>Administrador · Agroequity S.A.</h3>
+          <p>Administración de una empresa agrícola que produce soja, trigo y maíz para exportación.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="edu">
+      <h3>Formación</h3>
+      <p>Técnico Universitario en Programación · Universidad Tecnológica Nacional · 2023 – 2024</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="wrap section contact">
+    <h2 class="section-title"><span>03</span> Contacto</h2>
+    <p class="contact-lead">Busco un rol como desarrollador full-stack en un equipo que construya productos para usuarios reales.</p>
+    <p class="contact-mail"><a href="mailto:hernangaston@gmail.com">hernangaston@gmail.com</a></p>
+    <p class="contact-links">
+      <a href="https://www.linkedin.com/in/hernan-gaston/">LinkedIn ↗</a>
+      <a href="https://github.com/hernangaston">GitHub ↗</a>
+    </p>
+  </section>
+
+</main>
+
+<footer class="wrap foot">
+  <p>Hernán Gastón · 2026 · Sitio estático en HTML y CSS, publicado en GitHub Pages.</p>
+</footer>
+</body>
+</html>
